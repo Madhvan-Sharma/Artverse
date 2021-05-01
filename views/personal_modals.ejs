@@ -1,0 +1,66 @@
+<% for(let i=0 ;i < user_images.length ; i++){ %>
+
+    <div class="modal modal-full ie-scroll-fix" id="modal-for-<%= user_images[i].id %>" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark-dm">
+                <a href="#" class="close" role="button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="card d-flex justify-content-between border-0">
+                                <div class="w-three-quarter h-550 text-center bg-dark-light-dm">
+                                    <img src="<%= user_images[i].location %>"
+                                        class="h-550 w-auto bg-dark-light-dm image-fluid" alt="Gallery-image">
+                                </div>
+                                <div class="bg-very-dark-dm h-550 w-quarter  overflow-y-auto">
+
+                                    <div class="content">
+                                        <h2 class="content-title text-monospace">
+                                            Comments
+                                        </h2>
+
+                                        <% for(let j = 0 ; j < user_images[i].comments.length ; j++){ %> 
+
+                                            <div class="font-size-12 d-flex justify-content-between">
+                                                <div>
+                                                    <strong class="text-monospace font-size-14"><%= user_images[i].comments[j].user.name %></strong>
+                                                    <br />
+                                                    <%= user_images[i].comments[j].content %> 
+
+                                                </div>
+
+                                                <% if(locals.user && locals.user.id == user_images[i].user.id){ %> 
+                                                    <a href="/comments/destroy/<%= user_images[i].comments[j].id %>" class="align-self-center">
+                                                        <i class="far fa-trash-alt text-danger" aria-hidden="true"></i>
+                                                    </a>
+                                                <% } %> 
+                                            </div>
+                                            <hr />
+
+                                        <% } %>
+
+                                        <form action="/comments/create" method="post">
+                                            <div class="form-group">
+                                                <!-- <input type="text" class="form-control" name="content" placeholder="Comment here" required> -->
+                                                <textarea class="form-control form-control-sm" name="content" placeholder="Comment here..." required></textarea>
+                                                <input type="hidden" name="image" value="<%= user_images[i]._id %>">
+                                                <input class="btn btn-success mt-10 btn-sm" type="submit" value="Add Comment">
+                                              </div>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<% } %>
+
+        

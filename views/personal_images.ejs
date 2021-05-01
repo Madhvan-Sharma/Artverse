@@ -1,0 +1,53 @@
+<!-- <div class="content center-this">
+    <a href="/user/upload-page"><button class="glow-on-hover" type="button">UPLOAD IMAGES</button> </a>
+</div> -->
+
+<br>
+<h1 class="text-center text-monospace"><%= locals.user.name %>'s Album</h1>
+
+<div class="card bg-transparent border-0">
+
+    
+    <% for(let i = 0 ; i < user_images.length ; i++){ %> 
+
+            <!-- CARD -->
+            <a href="#modal-for-<%= user_images[i].id %>" class="text-decoration-none  text-white">
+
+                <div class="w-450 mw-full d-md-inline-block">
+                    <div class="card p-0 shadow text-center">
+                        <img src="<%= user_images[i].location %>" class="img-fluid rounded-top h-250" alt="Gallery-Image">
+                        <div class="content">
+                            <div class="d-flex justify-content-between">
+                                <h2 class="content-title font-size-24 font-weight-bold text-monospace">
+                                    <%= user_images[i].title %>
+                                </h2>
+                                <span class="pt-10 font-size-12">
+                                    Uploaded by <strong><%= user_images[i].user.name.toUpperCase() %></strong>
+                                </span>
+                            </div>
+
+                            <div class="p-10 pl-0 pt-5 d-flex justify-content-between" >
+                                <span class="text-muted w-150 overflow-hidden">
+                                <i class="far fa-clock" aria-hidden="true"></i> <%= new Date(user_images[i].createdAt).toDateString().split(/ (.+)/)[1]  %> 
+                                </span>
+                                <!-- <span class="badge"> 
+                                    <i class="fa fa-heart text-danger mr-5" aria-hidden="true"></i> 0 likes   
+                                </span> -->
+                                <a href="/user/destroy/<%= user_images[i].id %>" class="badge badge-danger">
+                                    <i class="far fa-trash-alt" aria-hidden="true"></i> DELETE
+                                </a>
+                            </div>
+                        </div>
+
+                        <% if(user_images[i].privacy == false){ %> 
+                            <span class="badge badge-success position-absolute top-0 right-0 m-10">PUBLIC</span>
+                        <% }else{ %> 
+                            <span class="badge badge-secondary position-absolute top-0 right-0 m-10">PRIVATE</span>
+                        <% } %>
+                    </div>
+                </div>
+            
+            </a>
+    <% } %> 
+                        
+</div>

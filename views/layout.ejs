@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1619870601/logo_n089st.svg" type="image/x-icon">
+
+    <title>
+        <%= title %>
+    </title>
+
+    <%- style %>
+        <link rel="stylesheet" href="/css/font-awesome.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <!-- Halfmoon CSS -->
+        <link href="/css/halfmoon-variables.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true"
+    data-sidebar-shortcut-enabled="true">
+    <!-- Page wrapper start -->
+    <div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom"
+        data-sidebar-type="overlayed-all" data-sidebar-hidden="hidden">
+
+        <!-- Sticky alerts -->
+        <div class="sticky-alerts"></div>
+
+        <!-- Navbar start -->
+        <nav class="navbar">
+            <div class="navbar-content">
+                <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+            <a href="/" class="navbar-brand ml-10 ml-sm-20">
+                <span class="d-none d-sm-flex font-weight-600">
+                    <img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1619870601/logo_n089st.svg" class="mt-5" alt="brand-logo">
+                    Artverse
+                </span>
+            </a>
+
+            <% if(locals.urlPath == '/' || locals.urlPath == '' || locals.urlPath == '/user/personal-images' || locals.urlPath == '/user/personal-images/'){ %>
+
+                <!-- UPLOAD BUTTON -->
+                <a href="/user/upload-page" class="hyperlink ml-auto"><button class="glow-on-hover" type="button">UPLOAD IMAGES</button></a>
+                
+            <% } %> 
+
+            <div class="navbar-content ml-auto">
+                <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                    <span class="sr-only">Toggle dark mode</span>
+                </button>
+                <% if(locals.user){ %>
+                    <!-- <a href="#" class="btn btn-link" role="button" style="text-transform: capitalize;">
+                        <%= user.name %>
+                    </a> -->
+
+                    <div class="dropdown with-arrow">
+                        <button class="btn btn-link" data-toggle="dropdown" type="button" id="user-details-dropdown" aria-haspopup="true" aria-expanded="false">
+                          <%= user.name %>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right p-20" aria-labelledby="user-details-dropdown">
+                          <h6 class="dropdown-header font-size-12 pl-0">Username</h6>
+                          <div class="p-5 pl-0"><%= user.name %></div>
+                          <h6 class="dropdown-header  font-size-12 pl-0">Email</h6>
+                          <div class="p-5 pl-0"><%= user.email %></div>
+                          <h6 class="dropdown-header font-size-12 pl-0">Account age</h6>
+                          <div class="p-5 pl-0"><%= Math.round((new Date().getTime() - new Date(user.createdAt).getTime())/(1000 * 3600 * 24)) %> days</div>
+                        </div>
+                    </div>
+                      
+                    
+                    &nbsp;
+                    <a href="/user/sign-out" class="btn btn-link" role="button">Sign out</a>
+                    <% } else { %>
+                        <a href="/user/sign-up" class="btn btn-success" role="button">Sign Up</a>
+                        &nbsp;
+                        <a href="/user/sign-in" class="btn btn-secondary" role="button">Sign In</a>
+                        <% } %>
+            </div>
+            
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- Sidebar overlay -->
+        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+
+        <!-- Sidebar start -->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+
+
+
+                <h5 class="sidebar-title">General</h5>
+                <div class="sidebar-divider"></div>
+                <a href="/user/personal-images" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="far fa-image" aria-hidden="true"></i>
+                    </span>
+                    Your Images
+                </a>
+                <a href="/user/upload-page" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="fas fa-upload" aria-hidden="true"></i>
+                    </span>
+                    Upload Images
+                </a>
+                <a href="/" class="sidebar-link sidebar-link-with-icon">
+                    <span class="sidebar-icon">
+                        <i class="far fa-images" aria-hidden="true"></i>
+                    </span>
+                    Public Images
+                </a>
+
+                <br />
+                <br />
+
+                <h5 class="sidebar-title">User Settings</h5>
+                <div class="sidebar-divider"></div>
+                <% if(locals.user){ %>
+                    <a href="#" class="sidebar-link sidebar-link-with-icon active" style="text-transform: capitalize;">
+                        <span class="sidebar-icon">
+                            <i class="far fa-id-badge" aria-hidden="true"></i>
+                        </span>
+                        <%= user.name %>
+                    </a>
+                    <a href="/user/sign-out" class="sidebar-link sidebar-link-with-icon">
+                        <span class="sidebar-icon">
+                            <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+                        </span>
+                        Sign Out
+                    </a>
+                    <% } else { %>
+                        <a href="/user/sign-up" class="sidebar-link sidebar-link-with-icon active">
+                            <span class="sidebar-icon">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                            </span>
+                            Sign Up
+                        </a>
+                        <a href="/user/sign-in" class="sidebar-link sidebar-link-with-icon">
+                            <span class="sidebar-icon">
+                                <i class="far fa-user" aria-hidden="true"></i>
+                            </span>
+                            Sign In
+                        </a>
+                        <% } %>
+
+
+            </div>
+        </div>
+        <!-- Sidebar end -->
+
+        <% if(locals.urlPath == '/' || locals.urlPath == ''){ %> 
+            <!-- MODALS FOR PUBLIC CARDS -->
+            <%- include('modal') %>
+        <% } %> 
+
+        <% if(locals.urlPath == '/user/personal-images' || locals.urlPath == '/user/personal-images/'){ %> 
+            <!-- MODALS FOR PERSONAL CARDS -->
+            <%- include('personal_modals') %>
+        <% } %> 
+
+
+        <!-- Content wrapper start -->
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <div class="row row-eq-spacing-lg">
+                    <div class="col-lg-12">
+                        <div class="content">
+                            <%- body %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content wrapper end -->
+
+        <!-- Navbar fixed bottom start -->
+        <nav class="navbar navbar-fixed-bottom">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa fa-question-circle-o mr-5" aria-hidden="true"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                &copy; Madhvan Sharma
+            </span>
+        </nav>
+        <!-- Navbar fixed bottom end -->
+
+    </div>
+    <!-- Page wrapper end -->
+
+    <!-- Halfmoon JS -->
+    <script src="/js/halfmoon.min.js"></script>
+    <script type="text/javascript">
+        // Toggles the parent's dark mode (if this page is loaded in an iFrame) 
+        function parentToggleDarkmode() {
+            window.parent.toggleDarkModeFromChild();
+        }
+
+        <% if (flash.success && flash.success.length > 0) {%>
+            // Toasts success alert
+            halfmoon.initStickyAlert({
+                content: "<%= flash.success %>",
+                title: "Alert",
+                alertType: "alert-success",
+                fillType: "filled-lm"
+            });
+        <% } %>
+        <% if (flash.error && flash.error.length > 0) {%>
+            // Toasts success alert
+            halfmoon.initStickyAlert({
+                content: "<%= flash.error %>",
+                title: "Alert",
+                alertType: "alert-danger",
+                fillType: "filled-lm"
+            });
+        <% } %>
+        <% if (flash.warning && flash.warning.length > 0) {%>
+            // Toasts success alert
+            halfmoon.initStickyAlert({
+                content: "<%= flash.warning %>",
+                title: "Alert",
+                alertType: "alert-primary",
+                fillType: "filled-lm"
+            });
+        <% } %>
+        <% if (flash.info && flash.info.length > 0) {%>
+            // Toasts success alert
+            halfmoon.initStickyAlert({
+                content: "<%= flash.info %>",
+                title: "Alert",
+                alertType: "alert-secondary",
+                fillType: "filled-lm"
+            });
+        <% } %>
+
+    </script>
+
+    <%- script %>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<h4 class="text-monospace text-center mt-0 mb-5">
+  SIGN UP
+</h4>
+<div class="card mt-0">
+  <form style="margin:auto;" action="/user/create-user" method="POST" class="w-400 mw-full">
+    <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+    <div class="form-group">
+      <label for="username" class="required">Username</label>
+      <input type="text" name="name" class="form-control" id="username" placeholder="Username" required="required">
+      <div class="form-text">
+        Only alphanumeric characters and underscores allowed.
+      </div>
+
+
+      <div class="form-group">
+        <label for="email" class="required">Email</label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required">
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="required">Password</label>
+        <input type="password" name="password" class="form-control" id="password" placeholder="Password"
+          required="required">
+        <div class="form-text">
+          Must be at least 8 characters long, and contain at least one special character.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password" class="required">Confirm password</label>
+        <input type="password" name="confirm_password" class="form-control" id="confirm-password"
+          placeholder="Confirm password" required="required">
+        <div class="form-text">
+          Must match the above password exactly.
+        </div>
+      </div>
+      <input class="btn btn-success btn-block" type="submit" value="Sign up">
+  </form>
+</div>

@@ -1,0 +1,46 @@
+<h1 class="text-center text-monospace">
+    UPLOAD IMAGES
+</h1>
+<br>
+
+<% if(locals.user){ %> 
+    <div class="card col-lg-12 center-this">
+    
+        <form action="/user/upload-image/<%= user.id %>" method="post" enctype="multipart/form-data" id="file-input-form">
+            <div class="form-group">
+        
+                <label for="title" class="required">Title</label>
+                <input type="text" name="title" class="form-control" id="title" placeholder="Title" required="required">
+
+                <br>
+
+                <div class="custom-switch" style="text-align: left;">
+                    <input type="checkbox" id="private" name="private" value="true">
+                    <label for="private">Keep Image Private</label>
+                </div>
+
+                <br>
+                
+            </div>
+            <div class="form-group">
+                <div class="form-group file-area shadow-sm border">
+                    
+                <input type="file" name="images" id="images" required="required" />
+                <div class="file-dummy">
+                  <div class="success">Great, your files are selected. Keep on.</div>
+                  <div class="default">Please select some files</div>
+                </div>
+              </div>
+            </div>
+
+            
+                
+            
+
+            <div class="form-group">
+                <button class="btn btn-lg alt-dm" type="submit">Upload</button>
+            </div>
+        </form>
+    </div>
+    
+<% } %>
