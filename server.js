@@ -37,11 +37,11 @@ app.set('views', path.join(__dirname,'views'));
 
 app.use(session({
     name : 'ArtGallery',
-    secret : 'ThisistheencryptionKey',
+    secret : process.env.SESSION_ENCRYPTION_KEY,
     saveUninitialized : false,
     resave : false,
     cookie : {
-        maxAge : Number(process.env.SESSION_MAX_AGE)
+        maxAge : parseInt(process.env.SESSION_MAX_AGE)
     },
     store: new MongoStore(
         {
