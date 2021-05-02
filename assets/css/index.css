@@ -109,3 +109,13 @@
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
+
+.set-font-27{
+  font-size:27px !important;
+}
+
+@media screen and (max-width: 576px) {
+  #upload-images-btn {
+    display: none;
+  }
+}

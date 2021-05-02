@@ -45,7 +45,7 @@
             <% if(locals.urlPath == '/' || locals.urlPath == '' || locals.urlPath == '/user/personal-images' || locals.urlPath == '/user/personal-images/'){ %>
 
                 <!-- UPLOAD BUTTON -->
-                <a href="/user/upload-page" class="hyperlink ml-auto"><button class="glow-on-hover" type="button">UPLOAD IMAGES</button></a>
+                <a href="/user/upload-page" class="hyperlink ml-auto" id="upload-images-btn"><button class="glow-on-hover" type="button">UPLOAD IMAGES</button></a>
                 
             <% } %> 
 
@@ -93,7 +93,15 @@
         <div class="sidebar">
             <div class="sidebar-menu">
 
-
+                <div class="d-xs-block d-sm-none sidebar-title">
+                    <a href="/" class="text-decoration-none text-white font-weight-500">
+                        <img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1619870601/logo_n089st.svg" class="w-25 h-25" alt="brand-logo">
+                        &nbsp;
+                        <span class="set-font-27 text-monospace">Artverse</span>
+                    </a>  
+                    <br>
+                    <br>
+                </div>
 
                 <h5 class="sidebar-title">General</h5>
                 <div class="sidebar-divider"></div>

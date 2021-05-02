@@ -5,7 +5,7 @@
 <br>
 <h1 class="text-center text-monospace"><%= locals.user.name %>'s Album</h1>
 
-<div class="card bg-transparent border-0">
+<div class="card bg-transparent border-0 p-0">
 
     
     <% for(let i = 0 ; i < user_images.length ; i++){ %> 
@@ -13,9 +13,9 @@
             <!-- CARD -->
             <a href="#modal-for-<%= user_images[i].id %>" class="text-decoration-none  text-white">
 
-                <div class="w-450 mw-full d-md-inline-block">
+                <div class="w-lg-450 mw-full d-md-inline-block">
                     <div class="card p-0 shadow text-center">
-                        <img src="<%= user_images[i].location %>" class="img-fluid rounded-top h-250" alt="Gallery-Image">
+                        <img src="<%= user_images[i].location %>" class="img-fluid w-full rounded-top h-250" alt="Gallery-Image">
                         <div class="content">
                             <div class="d-flex justify-content-between">
                                 <h2 class="content-title font-size-24 font-weight-bold text-monospace">
