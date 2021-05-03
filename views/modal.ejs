@@ -3,7 +3,7 @@
     <% if(images[i].privacy == false){ %> 
         <div class="modal modal-full ie-scroll-fix" id="modal-for-<%= images[i].id %>" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
-                <div class="modal-content bg-dark-dm">
+                <div class="modal-content bg-dark-dm h-auto h-lg-full">
                     <a href="#" class="close" role="button" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </a>
@@ -11,12 +11,12 @@
                         <div class="row">
                             <div class="col-md-12">
     
-                                <div class="card d-block d-md-flex justify-content-between border-0">
-                                    <div class="w-three-quarter h-550  text-center bg-dark-light-dm">
+                                <div class="card d-flex p-0 justify-content-between flex-column flex-lg-row border-0">
+                                    <div class="w-full w-lg-three-quarter h-auto h-lg-550  text-center bg-dark-light-dm">
                                         <img src="<%= images[i].location %>"
-                                            class="h-550 w-auto bg-dark-light-dm image-fluid" alt="Gallery-image">
+                                            class="h-auto h-lg-550 w-full w-lg-full bg-dark-light-dm image-fluid" alt="Gallery-image">
                                     </div>
-                                    <div class="bg-very-dark-dm h-550 w-quarter  overflow-y-auto">
+                                    <div class="bg-very-dark-dm h-auto h-lg-550 w-full w-lg-quarter  overflow-y-auto">
     
                                         <div class="content">
                                             <h2 class="content-title text-monospace">
