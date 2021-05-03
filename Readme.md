@@ -13,7 +13,7 @@ Users can upload their images and *add it to their private album or keep it publ
 
 #### The live version of this project can be accessed at : 
 
-// to be added
+#### &emsp;<https://artverse.herokuapp.com>
 
 #### For running this project locally:
 
@@ -49,4 +49,4 @@ Users can upload their images and *add it to their private album or keep it publ
 
 [Madhvan Sharma](https://www.linkedin.com/in/madhvan-sharma/) - madhvan.sharma28@gmail.com
 
-**Project Link :** //to be added
+**Project Link :** https://github.com/Madhvan-Sharma/Artverse
