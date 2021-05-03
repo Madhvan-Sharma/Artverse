@@ -33,7 +33,7 @@
     
                                                     </div>
     
-                                                    <% if(locals.user && locals.user.id == images[i].user.id){ %> 
+                                                    <% if(locals.user && locals.user.id == images[i].comments[j].user.id){ %> 
                                                         <a href="/comments/destroy/<%= images[i].comments[j].id %>" class="align-self-center">
                                                             <i class="far fa-trash-alt text-danger" aria-hidden="true"></i>
                                                         </a>
