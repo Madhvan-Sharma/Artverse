@@ -1,3 +1,4 @@
+
 # Artverse
 
 **Artverse** is a Web application where people can share images. It allows artists from different parts of the world to showcase their talent and it also provides a platform for convenient access of their images.
@@ -6,7 +7,27 @@ This web application has been made using ****Desktop**-**first** Responsive Stra
 
 Users can upload their images and *add it to their private album or keep it public.* This feature allows users to keep their family photos at a cloud storage so that they can be accessed digitally from anywhere in the world. Users can also share their views on different images by *adding comments* on images, *view* different images and much more.
 
-// snapshots of web application to be added here
+<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766985/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.02_PM_juamwb.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766985/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.02_PM_juamwb.png" alt="Homepage in dark mode" width="45%"></a>
+<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766976/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.00_PM_jngcn8.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766976/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.00_PM_jngcn8.png" alt="Homepage in dark mode" width="45%"></a>
+
+<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766905/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.33_PM_xdzfpd.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766905/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.33_PM_xdzfpd.png" alt="Sign-in Page" width="45%"></a>
+<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766906/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.40_PM_yyhqth.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766906/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.40_PM_yyhqth.png" alt="Sign-up Page" width="45%"></a>
+
+<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767007/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.33_PM_imn9bj.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767007/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.33_PM_imn9bj.png" alt="Image Modal in dark mode" width="45%"></a>
+<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767008/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.49_PM_a1nuat.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767008/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.49_PM_a1nuat.png" alt="Image Modal in light mode" width="45%"></a>
+
+<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766997/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.04_PM_fdts20.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766997/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.04_PM_fdts20.png" alt="Personal Album" width="45%"></a>
+<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767004/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.10_PM_zn6otj.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767004/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.10_PM_zn6otj.png" alt="SideBar" width="45%"></a>
+
+<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767012/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.50_PM_udzuab.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767012/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.50_PM_udzuab.png" alt="Mobile view" height="250px"></a>
+<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767017/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.58_PM_ahf7jn.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767017/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.58_PM_ahf7jn.png" alt="Mobile view of Modal" height="250px"></a>
+
+
+
+
+
+
+
 
 
 # Running the Project
