@@ -7,20 +7,20 @@ This web application has been made using ****Desktop**-**first** Responsive Stra
 
 Users can upload their images and *add it to their private album or keep it public.* This feature allows users to keep their family photos at a cloud storage so that they can be accessed digitally from anywhere in the world. Users can also share their views on different images by *adding comments* on images, *view* different images and much more.
 
-<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766985/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.02_PM_juamwb.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766985/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.02_PM_juamwb.png" alt="Homepage in dark mode" width="45%"></a>
-<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766976/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.00_PM_jngcn8.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766976/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.00_PM_jngcn8.png" alt="Homepage in dark mode" width="45%"></a>
+<a href="./assets/images/homepage.png"><img src="./assets/images/homepage.png" alt="Homepage in dark mode" width="45%"></a>
+<a href="./assets/images/homepage-lm.png"><img src="./assets/images/homepage-lm.png" alt="Homepage in light mode" width="45%"></a>
 
-<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766905/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.33_PM_xdzfpd.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766905/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.33_PM_xdzfpd.png" alt="Sign-in Page" width="45%"></a>
-<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766906/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.40_PM_yyhqth.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766906/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.40_PM_yyhqth.png" alt="Sign-up Page" width="45%"></a>
+<a href="./assets/images/sign-in.png"><img src="./assets/images/sign-in.png" alt="Sign-in Page" width="45%"></a>
+<a href="./assets/images/sign-up.png"><img src="./assets/images/sign-up.png" alt="Sign-up Page" width="45%"></a>
 
-<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767007/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.33_PM_imn9bj.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767007/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.33_PM_imn9bj.png" alt="Image Modal in dark mode" width="45%"></a>
-<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767008/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.49_PM_a1nuat.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767008/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.03.49_PM_a1nuat.png" alt="Image Modal in light mode" width="45%"></a>
+<a href="./assets/images/modal-dm.png"><img src="./assets/images/modal-dm.png" alt="Image Modal in dark mode" width="45%"></a>
+<a href="./assets/images/modal-lm.png"><img src="./assets/images/modal-lm.png" alt="Image Modal in light mode" width="45%"></a>
 
-<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766997/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.04_PM_fdts20.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621766997/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.04_PM_fdts20.png" alt="Personal Album" width="45%"></a>
-<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767004/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.10_PM_zn6otj.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767004/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.02.10_PM_zn6otj.png" alt="SideBar" width="45%"></a>
+<a href="./assets/images/personal-album.png"><img src="./assets/images/personal-album.png" alt="Personal Album" width="45%"></a>
+<a href="./assets/images/sidebar.png"><img src="./assets/images/sidebar.png" alt="SideBar" width="45%"></a>
 
-<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767012/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.50_PM_udzuab.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767012/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.50_PM_udzuab.png" alt="Mobile view" height="250px"></a>
-<a href="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767017/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.58_PM_ahf7jn.png"><img src="https://res.cloudinary.com/art-gallery-madhvan/image/upload/v1621767017/Snapshots%20Artverse/Screenshot_2021-05-23_at_4.05.58_PM_ahf7jn.png" alt="Mobile view of Modal" height="250px"></a>
+<a href="./assets/images/mobile-view-homepage.png"><img src="./assets/images/mobile-view-homepage.png" alt="Mobile view" height="250px"></a>
+<a href="./assets/images/mobile-view-modal.png"><img src="./assets/images/mobile-view-modal.png" alt="Mobile view of Modal" height="250px"></a>
 
 
 
