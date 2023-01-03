@@ -34,7 +34,7 @@ Users can upload their images and *add it to their private album or keep it publ
 
 #### The live version of this project can be accessed at : 
 
-#### &emsp;<https://artverse.herokuapp.com>
+#### &emsp;<https://artverse.up.railway.app/>
 
 #### For running this project locally:
 
